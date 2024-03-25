@@ -1,8 +1,12 @@
 ::-webkit-scrollbar{
+
     width: 20px;
+    
 }
 
 ::-webkit-scrollbar-track{
+
     color: #dee3df;
     width: 10px;
+
 }
