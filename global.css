@@ -1,0 +1,41 @@
+:root{
+
+    --padding-body: 0 28px;
+    --padding-buttons-container: 12px 0;
+    --padding-button: 12px;
+    --padding-main-container: 32px;
+    --padding-results-output: 16px;
+
+    --width-buttons-container: 480px;
+    --width-main-container: 100%;
+    --width-tooltip-container: 168px;
+    
+
+    --height-main-container: 100vh;
+    --height-results-output: 100%;
+
+    --gap-buttons-container: 28px;
+    --gap-main-container: 16px;
+    --gap-results-output: 16px;
+
+    --font-size-0: 1.75rem; /* 28px */
+    --font-size-1: 1.125rem; /* 18px */
+    --font-size-p: 1.5rem; /* 24px */
+
+    --font-weight-0: 900;
+    --font-weight-1: 500;
+    --font-weight-2: 400;
+
+    --border-btn: 1px solid white;
+    --border-results-output: 2px solid white;
+
+    --radius-0: 8px;
+    --radius-1: 4px;
+
+    --right-position-tooltip: 45px;
+
+
+
+
+
+}

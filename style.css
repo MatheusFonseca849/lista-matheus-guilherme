@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    padding: var(--padding-body);
+    color: #d8dfeb;
+    background: rgb(172,73,237);
+    background: linear-gradient(304deg, rgba(172,73,237,1) 30%, rgba(32,27,228,1) 83%);
+}
+
+.buttonsContainer {
+
+    width: var(--width-buttons-container);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-buttons-container);
+    padding: var(--padding-buttons-container);
+    overflow-y: auto;
+
+}
+
+.buttonsContainer h2 {
+
+    font-size: var(--font-size-0);
+    font-weight: var(--font-weight-1);
+
+}
+
+.exerciseBtn {
+
+    padding: var(--padding-button);
+    width: fit-content;
+    min-width: 128px;
+    height: fit-content;
+    background-color: transparent;
+    border: var(--border-btn);
+    border-radius: var(--radius-1);
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-2);
+    text-align: center;
+
+}
+
+.exerciseBtn:hover, .resetBtn:hover{
+    color: white;
+    border-color: white;
+    background-color: #ebeef240;
+}
+
+.mainContainer {
+
+    display: flex;
+    flex-direction: column;
+    width: var(--width-main-container);
+    gap: var(--gap-main-container);
+    padding: var(--padding-main-container);
+    height: var(--height-main-container);
+
+
+}
+
+.mainContainer h1 {
+
+    font-size: var(--font-size-0);
+
+}
+
+.mainContainer h2 {
+
+    font-size: var(--font-size-0);
+    font-weight: var(--font-weight-1);
+
+}
+
+.resultsOutput {
+
+    width: inherit;
+    height: var(--height-results-output);
+    border: var(--border-results-output);
+    border-radius: var(--radius-1);
+    padding: var(--padding-results-output);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-results-output);
+    
+}
+
+.resultsOutput P {
+    
+    font-size: var(--font-size-p);
+
+}
+
+.resetBtn{
+
+    position: absolute;
+    bottom: 48px;
+    right: 90px;
+    padding: var(--padding-button);
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    border: var(--border-btn);
+    border-radius: var(--radius-1);
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-2);
+
+}

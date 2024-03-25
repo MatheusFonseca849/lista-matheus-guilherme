@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./tooltip.css">
+    <link rel="stylesheet" href="./scrollbar.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Logo.png" type="image/x-icon">
+    <title>Lista de Exercícios 1 - Lógica de Programação</title>
+</head>
+
+<body>
+    <aside class="buttonsContainer">
+
+        <h2>Selecione um exercício para rodar o código:</h2>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="1">Exercício 1</button>
+            <span class="tooltiptext">Faça um algorítimo que receba dois números e retorne a soma deles</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="2">Exercício 2</button>
+            <span class="tooltiptext">Faça um algoritimo que receba dois números e mostre a soma, subtração,
+                multiplicação e divisão entre eles</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="3">Exercício 3</button>
+            <span class="tooltiptext">Escreva um algoritimo para determinar o consumo médio de um automóvel, sendo
+                fornecida a distância percorrida e o total de combustível gasto</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="4">Exercício 4</button>
+            <span class="tooltiptext">Escrever um algoritimo que leia o nome de um vendedor, seu salário fixo e o total
+                de vendas do mesmo no mês. Sabendo que o vendedor recebe 15% de comissão, informe seu nome, salário fixo
+                e salário total.</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="5">Exercício 5</button>
+            <span class="tooltiptext">Escrever um algoritimo que leia o nome de um aluno e as notas das três provas que
+                ele obteve no semestre. Informar o aluno e sua média (aritimética)</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="6">Exercício 6</button>
+            <span class="tooltiptext">Ler dois valores para as variáveis A e B, efetuar a troca dos valores, de modo que
+                A receba o valor de B e vice-versa</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="7">Exercício 7</button>
+            <span class="tooltiptext">Ler uma temperatura em Celsius e apresenta-la convertida para Fahrenheit</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="8">Exercício 8</button>
+            <span class="tooltiptext">Elaborar um algoritimo que mostre o valor da conversão em real de um valor lido em
+                dólar. O algoritimo deverá solicitar a cotação atual do dolar</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="9">Exercício 9</button>
+            <span class="tooltiptext">Faça um algoritimo que receba o valor depositado em uma poupança com juros de
+                0,7%a.m. e mostre o valor total na poupança após um mês</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="10">Exercício 10</button>
+            <span class="tooltiptext">A loja Mamão com Açucar está vendendo seus produtos em pretações. Leia o valor
+                total de uma compra, o total de prestações e retorne o valor a ser pago por mês.</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="11">Exercício 11</button>
+            <span class="tooltiptext">Faça um algoritimo que receba o preço de custo de um produto, a margem de lucro
+                desejada e informe o valor de venda do mesmo.</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="12">Exercício 12</button>
+            <span class="tooltiptext">O custo ao consumidor de um carro é igual ao custo de fábrica acrescido dos
+                impostos e da porcentagem do distribuidor (aplicam-se os impostos e, sobre o resultado, aplica-se a
+                porcentagem do distribuidor). Sendo a porcentagem do distribuidor igual a 28% e os impostos, 45%,
+                escreva um algoritimo que leia o custo de fábrica e informe o valor final de um carro.</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="13">Exercício 13</button>
+            <span class="tooltiptext">Faça um algoritimo que recebe um número e exibe uma mensagem informando se este é
+                maior ou menor do que 10</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="14">Exercício 14</button>
+            <span class="tooltiptext">Escrever um algoritimo que leia dois valores inteiros distintos e informe qual é o
+                maior</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="15">Exercício 15</button>
+            <span class="tooltiptext">Faça um algoritimo que recebe um número e informa se este está dentro de um
+                intervalo entre 100 e 200</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="16">Exercício 16</button>
+            <span class="tooltiptext">Escrever um algoritimo que lê o nome e as 3 notas de um estudante. Calcular sua
+                média, informar o nome e a menção do aluno (aprovado, reprovado ou em recuperação)</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="17">Exercício 17</button>
+            <span class="tooltiptext">Ler 10 números e informar quantos deles estão no intervalo entre 10(inclusive) e
+                150(inclusive)</span>
+        </div>
+
+        <div class="tooltip">
+            <button class="exerciseBtn" id="18">Exercício 18</button>
+            <span class="tooltiptext">Faça um algoritimo que recebe a idade de 10 pessoas e mostre uma mensagem
+                informando se a mesma é menor de idade ou não, considerando 18 anos como maior de idade.</span>
+        </div>
+    </aside>
+    <div class="mainContainer">
+        <h1>Lista de Exercícios 1 - Lógica de Programação</h1>
+        <span>Matheus Guilherme da Fonseca Iizuka - 24114290035</span>
+        <h2>Resultado:</h2>
+
+        <main id="results" class="resultsOutput">
+            
+        </main>
+        <button id="resetBtn" class="resetBtn">Reset Output</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
