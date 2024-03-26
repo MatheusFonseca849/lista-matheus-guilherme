@@ -333,6 +333,76 @@ function isUnderage(){
 
 }
 
+function manOrWoman(){
+
+    let main = document.getElementById("results")
+
+    let totalMasc = 0
+     totalFem = 0
+
+    for(let i = 0 ; i < 56 ; i++){
+
+    let name = prompt("Digite o seu nome").toLowerCase()
+    let gender = prompt("Digite o seu gênero").toLowerCase()
+    console.log(name, gender)
+
+    if(gender == "m" || gender == "masc" || gender == "macsulino"){
+
+        totalMasc = totalMasc + 1
+        alert(`A pessoa de nome ${name} é do gênero masculino`)
+
+    } else {
+
+        totalFem = totalFem + 1
+        alert(`A pessoa de nome ${name} é do gênero feminino`)
+
+    }
+
+    }
+
+    let p = document.createElement('p')
+    p.innerHTML = `O total de homens é ${totalMasc} e o total de mulheres é de ${totalFem}`
+    
+    main.appendChild(p)
+
+}
+
+function vehicleDiscount(){
+
+    let main = document.getElementById("results")
+
+    let keepGoing = true
+    let oldCars = 0
+    let newCars = 0
+
+    while(keepGoing = true){
+
+        let originalValue = Number(prompt("Qual o valor do carro?"))
+        let year = Number(prompt("Qual o ano do carro?"))
+
+        if(year <= 2000 ){
+
+            oldCars = oldCars + 1
+            let finalValue = originalValue * 0.88
+            alert(`O valor total do carro com desconto será de ${finalValue}`)
+
+        } else {
+
+            newCars = newCars + 1
+            let finalValue = originalValue * 0.93
+            alert(`O valor total do carro com desconto será de ${finalValue}`)
+
+        }
+        
+        console.log(keepGoing)
+        keepGoing = confirm("Gostaria de continuar?")
+    }
+
+    let p = document.createElement('p')
+    p.innerHTML = `Total de carros anteriores a 2000 é de ${oldCars} e o total de carros posteriores a 2000 é de ${newCars}`
+
+}
+
 function addEventListeners() {
 
     let btn1 = document.getElementById("1")
@@ -423,6 +493,16 @@ function addEventListeners() {
     let btn18 = document.getElementById("18")
     btn18.addEventListener('click', () => {
         isUnderage()
+    })
+
+    let btn19 = document.getElementById("19")
+    btn19.addEventListener("click", () => {
+        manOrWoman()
+    })
+
+    let btn20 = document.getElementById("20")
+    btn20.addEventListener("click", () => {
+        vehicleDiscount()
     })
 
     let resetBtn = document.getElementById('resetBtn')
