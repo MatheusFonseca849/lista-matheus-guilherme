@@ -121,13 +121,13 @@ function switchValues() {
 
 }
 
-function convertToFarenheiht(){
+function convertToFarenheiht() {
 
     let main = document.querySelector("#results");
 
     let celsiusTemp = Number(prompt('Digite a temperatura em Celsius').replace(',', '.'))
 
-    let fahrenheitTemp = (celsiusTemp*9 + 160)/5
+    let fahrenheitTemp = (celsiusTemp * 9 + 160) / 5
 
     let p = document.createElement('p')
     p.innerHTML = `A temperatura ${celsiusTemp}°C equivale a ${fahrenheitTemp}°F`
@@ -135,7 +135,7 @@ function convertToFarenheiht(){
     main.appendChild(p)
 }
 
-function convertDolarToReal(){
+function convertDolarToReal() {
 
     let main = document.querySelector("#results");
 
@@ -144,73 +144,73 @@ function convertDolarToReal(){
     let convertedValue = dolarAmount * exchangeRate
 
     let p = document.createElement('p')
-    p.innerHTML = `O valor total convertido em reais é ${convertedValue.toLocaleString('pt-BT', {style: 'currency', currency : 'BRL'})}`
+    p.innerHTML = `O valor total convertido em reais é ${convertedValue.toLocaleString('pt-BT', { style: 'currency', currency: 'BRL' })}`
 
     main.appendChild(p)
 }
 
-function savingsCalculator(){
-    
+function savingsCalculator() {
+
     let main = document.querySelector("#results");
 
     let savings = Number(prompt('Digite o valor depositado:'))
-    let savingsWithInterest = savings*1.07
+    let savingsWithInterest = savings * 1.07
 
     let p = document.createElement('p')
-    p.innerHTML = `Você terá ${savingsWithInterest.toLocaleString('pt-BR', { style: 'currency', currency : 'BRL'})} em sua conta no próximo mês!`
+    p.innerHTML = `Você terá ${savingsWithInterest.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} em sua conta no próximo mês!`
 
     main.appendChild(p)
 
 }
 
-function paymentCalculator(){
+function paymentCalculator() {
 
     let main = document.querySelector("#results");
 
     let total = Number(prompt('Digite o valor total da compra').replace(',', '.'))
     let payments = Number(prompt('Digite o número de prestações'))
 
-    let valuePerPayment = total/payments
+    let valuePerPayment = total / payments
 
     let p = document.createElement('p')
-    p.innerHTML = `Você irá pagar ${valuePerPayment.toLocaleString('pt-BR', { style: 'currency', currency : 'BRL'})}/mês por ${payments} meses!`
+    p.innerHTML = `Você irá pagar ${valuePerPayment.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}/mês por ${payments} meses!`
 
     main.appendChild(p)
 
 }
 
-function salesPrice(){
+function salesPrice() {
 
     let main = document.querySelector("#results");
 
     let buyingPrice = Number(prompt('Digite o valor de compra do produto').replace(',', '.'))
     let profitPercentage = Number(prompt('Digite a porcentagem de lucro desejada').replace(',', '.'))
-    let profitMargin = (buyingPrice*profitPercentage)/100
+    let profitMargin = (buyingPrice * profitPercentage) / 100
     let sellingPrice = buyingPrice + profitMargin
 
     let p = document.createElement('p')
-    p.innerHTML = `O valor de venda para o produto é de ${sellingPrice.toLocaleString('pt-BR', { style : 'currency', currency : 'BRL'})}`
+    p.innerHTML = `O valor de venda para o produto é de ${sellingPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`
 
     main.appendChild(p)
 
 }
 
-function carTotalCost(){
+function carTotalCost() {
 
     let main = document.querySelector("#results");
 
     let factoryPrice = Number(prompt('Digite o preço de fábrica do carro').replace(',', '.'))
-    let priceAfterTaxes = factoryPrice*1.45
-    let totalPrice = priceAfterTaxes*1.28
+    let priceAfterTaxes = factoryPrice * 1.45
+    let totalPrice = priceAfterTaxes * 1.28
 
     let p = document.createElement('p')
-    p.innerHTML = `O valor total do carro é de ${totalPrice.toLocaleString('pt-BR', { style : 'currency', currency : 'BRL'})}`
+    p.innerHTML = `O valor total do carro é de ${totalPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`
 
     main.appendChild(p)
 
 }
 
-function isGreaterThanTen(){
+function isGreaterThanTen() {
 
     let main = document.querySelector("#results");
 
@@ -220,14 +220,14 @@ function isGreaterThanTen(){
 
     if (userInput > 10) {
         p.innerHTML = `O número ${userInput} é maior que 10`
-    }else{
+    } else {
         p.innerHTML = "O número não é maior do que 10"
     }
 
     main.appendChild(p)
 }
 
-function whichIsGreater(){
+function whichIsGreater() {
 
     let main = document.querySelector("#results");
 
@@ -236,11 +236,11 @@ function whichIsGreater(){
 
     let p = document.createElement('p')
 
-    if(n1 > n2){
+    if (n1 > n2) {
         p.innerHTML = `${n1} é maior que ${n2}`
-    }else if(n1 < n2){
+    } else if (n1 < n2) {
         p.innerHTML = `${n1} <strong>Não</strong> é maior que ${n2}`
-    }else{
+    } else {
         p.innerHTML = `${n1} e ${n2} são iguais`
     }
 
@@ -248,7 +248,7 @@ function whichIsGreater(){
 
 }
 
-function isItOnInterval(){
+function isItOnInterval() {
 
     let main = document.querySelector("#results");
 
@@ -258,7 +258,7 @@ function isItOnInterval(){
 
     if (userInput >= 100 && userInput <= 200) {
         p.innerHTML = `O número ${userInput} está entre 100 e 200`
-    }else{
+    } else {
         p.innerHTML = `O número ${userInput} <strong>Não</strong> está entre 100 e 200`
     }
 
@@ -266,7 +266,7 @@ function isItOnInterval(){
 }
 
 function isStudentAproved() {
-    
+
     let main = document.querySelector("#results");
 
     let name = prompt('Digite o nome do aluno')
@@ -282,9 +282,9 @@ function isStudentAproved() {
 
     if (avg >= 7) {
         status = 'aprovado'
-    }else if(avg >= 5.1 && avg <= 6.9){
+    } else if (avg >= 5.1 && avg <= 6.9) {
         status = 'em recuperação'
-    }else{
+    } else {
         status = 'reprovado'
     }
 
@@ -294,13 +294,13 @@ function isStudentAproved() {
 
 }
 
-function countNumbers(){
+function countNumbers() {
 
     let main = document.querySelector("#results");
 
     let counter = 0
 
-    for(let i = 0 ; i < 10 ; i++){
+    for (let i = 0; i < 10; i++) {
 
         let userInput = Number(prompt("Digite um número"))
 
@@ -317,14 +317,14 @@ function countNumbers(){
 
 }
 
-function isUnderage(){
+function isUnderage() {
 
-    for(let i = 0 ; i < 10 ; i++){
+    for (let i = 0; i < 10; i++) {
 
         let userInput = Number(prompt('Digite a idade'))
         if (userInput >= 18) {
             alert('Maior de idade!')
-        }else{
+        } else {
             alert('Menor de idade!')
         }
 
@@ -333,74 +333,181 @@ function isUnderage(){
 
 }
 
-function manOrWoman(){
+function manOrWoman() {
 
     let main = document.getElementById("results")
 
     let totalMasc = 0
-     totalFem = 0
+    totalFem = 0
 
-    for(let i = 0 ; i < 56 ; i++){
+    for (let i = 0; i < 56; i++) {
 
-    let name = prompt("Digite o seu nome").toLowerCase()
-    let gender = prompt("Digite o seu gênero").toLowerCase()
-    console.log(name, gender)
+        let name = prompt("Digite o seu nome").toLowerCase()
+        let gender = prompt("Digite o seu gênero").toLowerCase()
+        console.log(name, gender)
 
-    if(gender == "m" || gender == "masc" || gender == "macsulino"){
+        if (gender == "m" || gender == "masc" || gender == "macsulino") {
 
-        totalMasc = totalMasc + 1
-        alert(`A pessoa de nome ${name} é do gênero masculino`)
+            totalMasc = totalMasc + 1
+            alert(`A pessoa de nome ${name} é do gênero masculino`)
 
-    } else {
+        } else {
 
-        totalFem = totalFem + 1
-        alert(`A pessoa de nome ${name} é do gênero feminino`)
+            totalFem = totalFem + 1
+            alert(`A pessoa de nome ${name} é do gênero feminino`)
 
-    }
+        }
 
     }
 
     let p = document.createElement('p')
     p.innerHTML = `O total de homens é ${totalMasc} e o total de mulheres é de ${totalFem}`
-    
+
     main.appendChild(p)
 
 }
 
-function vehicleDiscount(){
+function vehicleDiscount() {
 
     let main = document.getElementById("results")
 
-    let keepGoing = true
     let oldCars = 0
     let newCars = 0
+    let keepGoing = true
 
-    while(keepGoing = true){
 
-        let originalValue = Number(prompt("Qual o valor do carro?"))
-        let year = Number(prompt("Qual o ano do carro?"))
+    do {
 
-        if(year <= 2000 ){
+        let originalValue = Number(prompt("Digite o valor do carro"))
+        let year = Number(prompt("Digite o ano de fabricação"))
 
-            oldCars = oldCars + 1
+        if (year <= 2000) {
+
+            oldCars++
             let finalValue = originalValue * 0.88
-            alert(`O valor total do carro com desconto será de ${finalValue}`)
+            alert(`O valor do carro com desconto é de ${(finalValue.toFixed(2)).toLocaleString("pt-br", { style: "currency", currency: "BRL" })}`)
 
         } else {
 
-            newCars = newCars + 1
+            newCars++
             let finalValue = originalValue * 0.93
-            alert(`O valor total do carro com desconto será de ${finalValue}`)
+            alert(`O valor do carro com desconto é de ${(finalValue.toFixed(2)).toLocaleString("pt-br", { style: "currency", currency: "BRL" })}`)
 
         }
-        
-        console.log(keepGoing)
-        keepGoing = confirm("Gostaria de continuar?")
+        keepGoing = confirm("Quer continuar calculando?")
+
+    }
+    while (keepGoing == true)
+
+    let p = document.createElement('p')
+    p.innerHTML = `O total de carros antigos é de ${oldCars} e o total de carros novos é de ${newCars}`
+
+    main.appendChild(p)
+
+}
+
+function isAbleForMilitary(){
+
+    let main = document.getElementById("results")
+
+    let entries = Number(prompt("Quantas pessoas serão avaliadas?"))
+
+    let countAble = 0
+    let countUnable = 0
+
+    for(let i = 0 ; i < entries ; i++){
+
+        let name = prompt("Insira o nome:")
+        let age = Number(prompt("Insira a idade:"))
+        let gender = prompt("Insira o gênero (M/F)").toLowerCase()
+        let healthStatus = prompt("Insira o parecer médico (apto/inapto)")
+
+        if(age < 18 || gender !== "m" || healthStatus == "inapto"){
+
+            alert(`${name} não está apta para o serviço militar obrigatório`)
+            countUnable++
+
+        } else {
+
+            alert(`${name} está apta para o serviço militar obrigatório`)
+            countAble++
+        }
+
     }
 
     let p = document.createElement('p')
-    p.innerHTML = `Total de carros anteriores a 2000 é de ${oldCars} e o total de carros posteriores a 2000 é de ${newCars}`
+    p.innerHTML = `${countAble} pessoas estão aptas e ${countUnable} pessoas estão inaptas para o serviço militar obrigatório!`
 
+    main.appendChild(p)
+}
+
+function lossOrProfit(){
+
+    let main = document.getElementById("results")
+
+    let totalBuyingPrice = 0
+    let totalSellingPrice = 0
+
+    for(let i = 0 ; i < 40 ; i++){
+
+        let buyingPrice = Number(prompt("Qual o valor de compra do produto"))
+        totalBuyingPrice = totalBuyingPrice + buyingPrice
+
+        let sellingPrice = Number(prompt("Qual o valor de venda do produto?"))
+        totalSellingPrice = totalSellingPrice + sellingPrice
+
+        let profit = sellingPrice - buyingPrice
+
+        if(profit < 0){
+
+            alert(`Prejuízo de R$ ${(Math.abs(profit).toFixed(2))}`)
+
+        } else if (profit > 0){
+
+            alert(`Lucro de R$ ${profit.toFixed(2)}`)
+
+        } else {
+
+            alert("Empate na venda!")
+
+        }
+
+    }
+
+    let avgBuyingPrice = (totalBuyingPrice / 40)
+    let avgSellingPrice = (totalSellingPrice / 40)
+    
+    let p = document.createElement('p')
+    p.innerHTML = `A média de valor de compra é igual a ${avgBuyingPrice.toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
+    e a média de valor de venda é igual a ${avgSellingPrice.toLocaleString("pt-br", { style: "currency", currency: "BRL" })}`
+
+    main.appendChild(p)
+
+}
+
+function showMessage(){
+
+    let main = document.getElementById("results")
+
+    let p = document.createElement('p')
+
+    let userInput = Number(prompt("Digite um número"))
+
+    if(userInput > 80){
+
+        p.innerHTML = `O número ${userInput} é maior que 80`
+
+    } else if (userInput == 40){
+
+        p.innerHTML = "O número informado é igual a 40"
+
+    } else if( userInput < 25){
+
+        p.innerHTML = `O número ${userInput} é menor que 25`
+
+    }
+
+    main.appendChild(p)
 }
 
 function addEventListeners() {
@@ -503,6 +610,21 @@ function addEventListeners() {
     let btn20 = document.getElementById("20")
     btn20.addEventListener("click", () => {
         vehicleDiscount()
+    })
+
+    let btn21 = document.getElementById("21")
+    btn21.addEventListener("click", () => {
+        isAbleForMilitary()
+    })
+
+    let btn22 = document.getElementById("22")
+    btn22.addEventListener("click", () => {
+        lossOrProfit()
+    })
+
+    let btn23 = document.getElementById("23")
+    btn23.addEventListener("click", () => {
+        showMessage()
     })
 
     let resetBtn = document.getElementById('resetBtn')

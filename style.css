@@ -1,4 +1,6 @@
 body {
+    width: inherit;
+    height: inherit;
     display: flex;
     padding: var(--padding-body);
     color: #d8dfeb;
