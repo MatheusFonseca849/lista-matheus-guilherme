@@ -300,7 +300,7 @@ function countNumbers() {
 
     let counter = 0
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 80; i++) {
 
         let userInput = Number(prompt("Digite um número"))
 
@@ -319,7 +319,7 @@ function countNumbers() {
 
 function isUnderage() {
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0 ; i < 75 ; i++) {
 
         let userInput = Number(prompt('Digite a idade'))
         if (userInput >= 18) {
