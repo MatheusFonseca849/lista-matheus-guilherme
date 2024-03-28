@@ -338,7 +338,7 @@ function manOrWoman() {
     let main = document.getElementById("results")
 
     let totalMasc = 0
-    totalFem = 0
+    let totalFem = 0
 
     for (let i = 0; i < 56; i++) {
 
