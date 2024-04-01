@@ -21,6 +21,8 @@ button {
     cursor: pointer;
 }
 
-body{
-  overflow: scroll;
+html{
+
+  overflow: hidden;
+
 }
